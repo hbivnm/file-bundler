@@ -1,7 +1,9 @@
 # file-bundler
 A small Python script that takes a list of files and organizes them to your liking and then creates a zip-archive.
 
-## Running the script
+## Configurate and running the script
+Edit the dictionary to your liking. Keys are subfolders (key "root" is reserved for root folder.) Values represent files to be placed in each subfolder (key,) values are matched fully or partially with the keyword "in".
+
 To run the script, use the following:
 - `py file-bundler.py <SOURCE> <TARGET> <NAME>`
   - `<SOURCE>` Full path to directory of unorganized files.
