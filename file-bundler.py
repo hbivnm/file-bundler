@@ -1,7 +1,5 @@
 #  --------------------------------------------------------------------------
-#   Creation: 03/03/2022
-#   Authors: J. Alex
-#   
+#
 #   Running the script:
 #       py file-bundler.py <SOURCE> <TARGET> <NAME>
 #       
@@ -21,12 +19,15 @@ import sys
         Value - List of wanted files in each subfolder. Values are matched with keyword "in" (i.e values are matched fully or partially.)
 
     Note: Key named "root" represents the root folder (not a subfolder!)
+    
+    ex.
+    DIRECTORY_FILE_DICTIONARY = {
+        "bluetooth": ["bluetooth", "ble"],
+        "web": ["webrelated"],
+        "root": ["rooted"],
+    }
 """
-DIRECTORY_FILE_DICTIONARY = {
-    "bluetooth": ["bluetooth", "ble"],
-    "web": ["webrelated"],
-    "root": ["rooted"],
-}
+DIRECTORY_FILE_DICTIONARY = {}
 
 PATH_TMP = "./temp"
 PATH_SOURCE = ""
